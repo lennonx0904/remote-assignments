@@ -1,0 +1,68 @@
+/* 大於1200px */
+
+@media (min-width: 1201px){
+
+    .navBtn {
+        display: none;
+    }
+
+    .navList {
+        display: inline-block;
+    }
+
+    .sectionContainer {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+}
+
+/*   800px-1200px   */
+
+@media (min-width: 801px) and (max-width: 1200px) {
+ 
+    .navBtn {
+        display: none;
+    }
+
+    .navList {
+        display: inline-block;
+    }
+
+    .sectionContainer {
+        max-width: 90%;
+        margin: auto;
+    }
+
+}
+
+/*  500px - 800px */
+
+@media (min-width: 501px) and (max-width: 800px) {
+ 
+
+    .sectionContainer {
+        max-width: 90%;
+        margin: auto;
+    }
+}
+
+
+/*    小於 500px   */
+
+@media (max-width: 500px) {
+
+    .navList {
+        display: none;
+    }
+
+    .flexRow {
+        flex-wrap: wrap;
+    }
+
+    .box {
+        margin: 5%;
+    }
+
+}
+
