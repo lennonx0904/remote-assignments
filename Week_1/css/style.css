@@ -10,33 +10,36 @@ footer {
 /* Navigation Bar */
 
 .navBar {
-    height: 36px;
+    height: 52px;
     width: 100%;
     margin: 0;
     background-color: rgba(153, 221, 255, 0.8);
     position: fixed;
     display: flex;
+    align-items: center;
 }
 
 .name {
     font-size: 32px;
-    padding-left: 20px; 
+    padding: 0 1%; 
 }
 
 .logo {
     margin-right: auto;
     height: 36px;
-    padding-left: 12px;
 }
 
-.navBtn .fa-bars {
-    font-size: 32px;
+.navBtn {
+    background: none;
+}
+.navBtn img{
+    height: 32px;   
 }
 
 .navList {
     display: none;
     margin: 0;
-    padding-right: 20px;
+    padding-right: 1%;
 }
 
 .navList li {
@@ -46,7 +49,7 @@ footer {
 }
 
 .navList li a {
-    font-size: 24px;
+    font-size: 20px;
     text-decoration: none;
 }
 
