@@ -31,6 +31,7 @@ footer {
 
 .navBtn {
     background: none;
+    border: none;
 }
 .navBtn img{
     height: 32px;   
