@@ -86,10 +86,10 @@
     </body>
     
 
-    <script src="js/app.js"></script>
-    <script>
+<script src="js/app.js"></script>
+<script>
     
-    // Assignment 1
+// Assignment 1
 
 function max(...numbers) {
     var maxNumber = numbers[0];
@@ -101,14 +101,42 @@ function max(...numbers) {
     return maxNumber;
 }
 
+console.log("Assignment 1 : ")
 console.log(max(1, 2, 4, 5));
 console.log(max(5, 2, 7, 1, 6));
 
 
 // Assignment 2
 
-console.log("Assignment 2 : 還在理解題目的意思...");
+function calculate(args) {  
+    let result;
+    if( args.op === " + " ) { 
+        result = args.n1 + args.n2;
+    } else if ( args.op === " - " ) { 
+        result = args.n1 - args.n2;
+    } else {
+        result="Not supported";
+    }
+    return result; 
+}
 
+var object1 = {
+    op: ' - ',
+    n1: 100,
+    n2: 80
+}
+
+var object2 = {
+    n1: 25, 
+    n2: 75,
+    op: " + "
+}
+
+console.log("Assignment 2 : 其實不是很懂題目的意思...");
+console.log(object1);
+console.log("result : " + calculate(object1));
+console.log(object2);
+console.log("result : " + calculate(object2));
 
 
 // Assignment 3
@@ -137,8 +165,9 @@ var data = {
             price:250 
         }
     ]
-    }
-        
+}
+
+console.log("Assignment 3 : ")
 console.log(avg(data));
 
 
@@ -155,9 +184,8 @@ function twoSum(nums, target) {
     }
 }
 
+console.log("Assignment 5 : ")
 console.log(twoSum([2, 7, 11, 15], 9)); 
-
     
-    
-    </script>
+</script>
 </html>
