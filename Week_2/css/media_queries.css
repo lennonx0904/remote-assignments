@@ -16,8 +16,8 @@
         padding: 10px 18px;
     }
 
-    .navListItem :hover,
-    .navListItem :active {
+    .navListItem:hover,
+    .navListItem:active {
         background-color: rgba(0, 100, 150, 0.3);
     }
 
@@ -46,8 +46,8 @@
         padding: 10px 18px;
     }
 
-    .navListItem :hover,
-    .navListItem :active {
+    .navListItem:hover,
+    .navListItem:active {
         background-color: rgba(0, 100, 150, 0.3);
     }
 
@@ -93,7 +93,7 @@
     }
 
     .navListItem:hover,
-    .navListItem :active{
+    .navListItem:active{
         background-color: rgba(0, 0, 0, 0.3);
     }
     
@@ -146,8 +146,8 @@
         padding: 24px 12px;
     }
 
-    .navListItem :hover,
-    .navListItem :active {
+    .navListItem:hover,
+    .navListItem:active {
         background-color: rgba(0, 0, 0, 0.3);
     }
 
