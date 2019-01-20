@@ -8,6 +8,8 @@
 
     .navList {
         display: inline-block;
+        /* margin: 0;
+        padding-right: 1%; */
     }
 
     .navListItem {
@@ -20,6 +22,11 @@
     .navListItem :active {
         background-color: rgba(0, 100, 150, 0.3);
     }
+
+    /* .navListItem a {
+        font-size: 20px;
+        text-decoration: none;
+    } */
 
     .sectionContainer {
         max-width: 1200px;
@@ -38,6 +45,8 @@
 
     .navList {
         display: inline-block;
+        /* margin: 0;
+        padding-right: 1%; */
     }
 
     .navListItem {
@@ -51,6 +60,11 @@
         background-color: rgba(0, 100, 150, 0.3);
     }
 
+    /* .navListItem a {
+        font-size: 20px;
+        text-decoration: none;
+    } */
+
     .sectionContainer {
         max-width: 90%;
         margin: auto;
@@ -62,13 +76,37 @@
 
 @media (min-width: 501px) and (max-width: 800px) {
 
+
     .navBar {
+        /* height: 52px;
+        width: 100%;
+        margin: 0;
+        background-color: rgba(153, 221, 255, 0.8);
+        position: fixed; */
         display: table;
+        /* align-items: center; */
     }
     
+    /* .name {
+        font-size: 32px;
+        padding: 0 1%; 
+    } */
+    
+    /* .logo {
+        margin-right: auto;
+        height: 36px;
+    } */
+    
     .navBtn {
+        /* background: none;
+        border: none; */
         float: right;
     }
+    
+    /* .navBtn img{
+        height: 48px;
+          
+    } */
     
     .navList {
         display: none;
@@ -78,17 +116,22 @@
         position: fixed;
         background-color: rgba(100, 100, 100, 0.9);        top: 0;
         right: 0;
+        /* z-index: 5; */
         height: -webkit-fill-available;
     }
     
     .closeBtn {
+        /* display: none; */
         position: fixed;
         height: 24px;
         top: 12px;
         right: 12px;
+        /* z-index: 3; */
     }
 
     .navListItem {
+        /* display: block;
+        list-style: none; */
         padding: 24px 12px;
     }
 
@@ -115,12 +158,34 @@
 @media (max-width: 500px) {
 
     .navBar {
+        /* height: 48px;
+        width: 100%;
+        margin: 0;
+        background-color: rgba(153, 221, 255, 0.8);
+        position: fixed; */
         display: table;
+        /* align-items: center; */
     }
-     
+    
+    /* .name {
+        font-size: 32px;
+        padding: 0 1%; 
+    }
+    
+    .logo {
+        margin-right: auto;
+        height: 36px;
+    } */
+    
     .navBtn {
+        /* background: none;
+        border: none; */
         float: right;
     }
+    
+    /* .navBtn img {
+        height: 48px;
+    } */
     
     .navList {
         display: none;
@@ -136,6 +201,7 @@
     }
     
     .closeBtn {
+        /* display: none; */
         position: fixed;
         height: 24px;
         top: 12px;
@@ -143,6 +209,8 @@
     }
 
     .navListItem {
+        /* display: block;
+        list-style: none; */
         padding: 24px 12px;
     }
 
@@ -150,6 +218,12 @@
     .navListItem :active {
         background-color: rgba(0, 0, 0, 0.3);
     }
+    
+    /* .navListItem a {
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+    } */
 
     .flexRow {
         flex-wrap: wrap;
@@ -160,3 +234,4 @@
     }
 
 }
+
