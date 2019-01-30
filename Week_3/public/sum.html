@@ -14,19 +14,20 @@
     </boby>
 
     <script>
-        // var inputValue = document.getElementById("inputValue").value;
-        // var getDataUrl = "/getData?number=" + inputValue;
-
-
+        
         function getSum() {
+            var inputValue = document.getElementById("inputValue").value;
+            var getDataUrl = "/getData?number=" + inputValue;
+            
             var xhr = new XMLHttpRequest();
             xhr.onreadystatechange = function() {
                 if (xhr.readyState === 4 && xhr.status === 200) {
-                    document.getElementById("answer").innerHTML = xhr.responseText;
+                    document.getElementById("answer").innerHTML = "The answer is " + xhr.responseText;
                 } 
             };
-            xhr.open("GET", "/getData?number=10", true);
+            xhr.open("GET", getDataUrl, true);
             xhr.send();
+            event.preventDefault();
         }
         
     </script>
