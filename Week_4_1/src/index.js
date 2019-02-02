@@ -56,7 +56,7 @@ class NavBtn extends React.Component {
     render() {
         return (
             <button type="button" className="navBtn" onClick={this.props.openList}>
-                <img src={require("./menu.svg")} />  
+                <img src={require("./src/menu.svg")} />  
             </button>
         );
     }
@@ -66,7 +66,7 @@ class NavList extends React.Component {
     render() {
         return ( 
                 <ul className="navList">
-                    <img src={require("./white_exit.svg")} 
+                    <img src={require("./src/white_exit.svg")} 
                         className="closeBtn" 
                         onClick={this.props.closeList} 
                         style={{display: window.innerWidth > 800 ? "none" : "block"}}
@@ -78,8 +78,6 @@ class NavList extends React.Component {
         );
     }
 }
-
-const logo = require("./papre_plane.svg");
 
 class Header extends React.Component {
     state = {
@@ -105,7 +103,8 @@ class Header extends React.Component {
         <header>
           <nav className="navBar">
             <span className="name"> DEMO / </span>
-            <img className="logo" src={logo} />
+            <img className="logo" 
+                 src={require("./src/papre_plane.svg")} />
             <NavBtn openList={this.openList} />
             {
                 this.state.showList || window.innerWidth > 800 ?
