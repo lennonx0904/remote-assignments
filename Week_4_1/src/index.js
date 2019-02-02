@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './style.css';
-import './media_queries.css';
+// import './style.css';
+// import './media_queries.css';
 
-import * as serviceWorker from './serviceWorker';
 
 const navListItems = ["首頁", "每日精選", "讀者評論", "關於我們"]
 const sections = [
