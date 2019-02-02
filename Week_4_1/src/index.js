@@ -1,6 +1,3 @@
-const { Component } = React;
-const { render } = ReactDOM;
-
 const navListItems = ["首頁", "每日精選", "讀者評論", "關於我們"]
 const sections = [
     {
