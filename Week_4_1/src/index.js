@@ -1,3 +1,6 @@
+const { Component } = React;
+const { render } = ReactDOM;
+
 const navListItems = ["首頁", "每日精選", "讀者評論", "關於我們"]
 const sections = [
     {
@@ -234,20 +237,16 @@ class Section extends React.Component {
   
 class App extends React.Component {
     render() {
-      return (
-        <div>
-            <Header />
-            <Cover message="Welcome Message" />
-            <Section />
-        </div>
-      );
+        return (
+            <div>
+                <Header />
+                <Cover message="Welcome Message" />
+                <Section />
+            </div>
+        );
     }
   }
 
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
