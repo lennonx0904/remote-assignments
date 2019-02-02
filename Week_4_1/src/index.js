@@ -1,9 +1,3 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-// import './style.css';
-// import './media_queries.css';
-
-
 const navListItems = ["首頁", "每日精選", "讀者評論", "關於我們"]
 const sections = [
     {
@@ -67,8 +61,7 @@ class NavBtn extends React.Component {
     }
 }
 
-class NavList extends React.Component {
-    
+class NavList extends React.Component {    
     render() {
         return ( 
                 <ul className="navList">
@@ -213,9 +206,6 @@ class Section extends React.Component {
     }
 
     openRow = () => {
-        // this.setState({
-        //     showRow: !this.showRow
-        // });
         const currentState = this.state.showRow;
         this.setState({ showRow: !currentState });
     }
