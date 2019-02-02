@@ -79,6 +79,8 @@ class NavList extends React.Component {
     }
 }
 
+const logo = require("./papre_plane.svg");
+
 class Header extends React.Component {
     state = {
         showList: false
@@ -96,13 +98,14 @@ class Header extends React.Component {
         });
     }
 
+    
+
     render() {
       return (
         <header>
           <nav className="navBar">
             <span className="name"> DEMO / </span>
-            <img className="logo" 
-                 src={require("./papre_plane.svg")} />
+            <img className="logo" src={logo} />
             <NavBtn openList={this.openList} />
             {
                 this.state.showList || window.innerWidth > 800 ?
