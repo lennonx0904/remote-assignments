@@ -62,60 +62,60 @@ class NavBtn extends React.Component {
     }
 }
 
-class NavList extends React.Component {    
-    render() {
-        return ( 
-                <ul className="navList">
-                    <img src={require("./white_exit.svg")} 
-                        className="closeBtn" 
-                        onClick={this.props.closeList} 
-                        style={{display: window.innerWidth > 800 ? "none" : "block"}}
-                        />
-                        {this.props.navListItemName.map(item => 
-                        <li className="navListItem"><a href="#">{item}</a></li>   
-                        )}
-                </ul>
-        );
-    }
-}
+// class NavList extends React.Component {    
+//     render() {
+//         return ( 
+//                 <ul className="navList">
+//                     <img src={require("./white_exit.svg")} 
+//                         className="closeBtn" 
+//                         onClick={this.props.closeList} 
+//                         style={{display: window.innerWidth > 800 ? "none" : "block"}}
+//                         />
+//                         {this.props.navListItemName.map(item => 
+//                         <li className="navListItem"><a href="#">{item}</a></li>   
+//                         )}
+//                 </ul>
+//         );
+//     }
+// }
 
 
-class Header extends React.Component {
-    state = {
-        showList: false
-    };
+// class Header extends React.Component {
+//     state = {
+//         showList: false
+//     };
 
-    openList = () => {
-        this.setState({
-            showList: true
-        });
-    }
+//     openList = () => {
+//         this.setState({
+//             showList: true
+//         });
+//     }
 
-    closeList = () => {
-        this.setState({
-            showList: false
-        });
-    }
+//     closeList = () => {
+//         this.setState({
+//             showList: false
+//         });
+//     }
 
-    render() {
-      return (
-        <header>
-          <nav className="navBar">
-              <span className="name"> DEMO / </span>
-              <img src={require("./papre_plane.svg")} className="logo"  />
-              <NavBtn openList={this.openList} />
-              {
-                  this.state.showList || window.innerWidth > 800 ?
-                  <NavList 
-                    navListItemName={navListItems} 
-                    closeList={this.closeList} />
-                  : null
-              }
-          </nav>
-        </header>
-      );
-    }
-  }
+//     render() {
+//       return (
+//         <header>
+//           <nav className="navBar">
+//               <span className="name"> DEMO / </span>
+//               <img className="logo" src={require("./papre_plane.svg")} />
+//               <NavBtn openList={this.openList} />
+//               {
+//                   this.state.showList || window.innerWidth > 800 ?
+//                   <NavList 
+//                     navListItemName={navListItems} 
+//                     closeList={this.closeList} />
+//                   : null
+//               }
+//           </nav>
+//         </header>
+//       );
+//     }
+//   }
   
 class Cover extends React.Component {
     state = {
@@ -237,7 +237,7 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <Header />
+                {/* <Header /> */}
                 <Cover message="Welcome Message" />
                 <Section />
             </div>
