@@ -1,3 +1,4 @@
+
 const navListItems = ["首頁", "每日精選", "讀者評論", "關於我們"]
 const sections = [
     {
@@ -101,7 +102,7 @@ class Header extends React.Component {
         <header>
           <nav className="navBar">
               <span className="name"> DEMO / </span>
-              <img className="logo" src={require("./papre_plane.svg")} />
+              <img src={require("./papre_plane.svg")} className="logo"  />
               <NavBtn openList={this.openList} />
               {
                   this.state.showList || window.innerWidth > 800 ?
