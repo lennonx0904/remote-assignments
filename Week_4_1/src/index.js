@@ -231,10 +231,10 @@ class Section extends React.Component {
             </div>
             {
                 this.state.showRow?
-                <>
+                <div>
                 <FlexRow3 sectionInfo={sections} /> 
                 <FlexRow4 sectionInfo={sections} />
-                </>
+                </div>
                 : null   
             }           
         </section>
