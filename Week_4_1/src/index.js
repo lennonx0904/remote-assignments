@@ -79,8 +79,7 @@ class NavList extends React.Component {
     }
 }
 
-
-class Header extends React.Component {
+class ParentNav extends React.Component {
     state = {
         showList: false
     };
@@ -98,20 +97,31 @@ class Header extends React.Component {
     }
 
     render() {
+        return (
+            <>
+            <NavBtn openList={this.openList} />
+              {
+                this.state.showList || window.innerWidth > 800 ?
+                <NavList 
+                navListItemName={navListItems} 
+                closeList={this.closeList} />
+                : null
+              }
+            </>
+        );
+    }
+}
+
+
+class Header extends React.Component {
+    render() {
       return (
         <header>
-          <nav className="navBar">
-              <span className="name"> DEMO / </span>
-              <img className="logo" src={require("./papre_plane.svg")} />
-              <NavBtn openList={this.openList} />
-              {
-                  this.state.showList || window.innerWidth > 800 ?
-                  <NavList 
-                    navListItemName={navListItems} 
-                    closeList={this.closeList} />
-                  : null
-              }
-          </nav>
+            <nav className="navBar">
+                <span className="name"> DEMO / </span>
+                <img className="logo" src={require("./papre_plane.svg")} />
+                <ParentNav />
+            </nav>
         </header>
       );
     }
