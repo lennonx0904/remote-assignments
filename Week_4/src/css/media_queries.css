@@ -1,0 +1,162 @@
+/* 大於1200px */
+
+@media (min-width: 1201px){
+
+    .navBtn {
+        display: none;
+    }
+
+    .navList {
+        display: inline-block;
+    }
+
+    .navListItem {
+        display: inline-block;
+        list-style: none;
+        padding: 10px 18px;
+    }
+
+    .navListItem:hover,
+    .navListItem:active {
+        background-color: rgba(0, 100, 150, 0.3);
+    }
+
+    .sectionContainer {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+}
+
+/*   800px-1200px   */
+
+@media (min-width: 801px) and (max-width: 1200px) {
+ 
+    .navBtn {
+        display: none;
+    }
+
+    .navList {
+        display: inline-block;
+    }
+
+    .navListItem {
+        display: inline-block;
+        list-style: none;
+        padding: 10px 18px;
+    }
+
+    .navListItem:hover,
+    .navListItem:active {
+        background-color: rgba(0, 100, 150, 0.3);
+    }
+
+    .sectionContainer {
+        max-width: 90%;
+        margin: auto;
+    }
+
+}
+
+/*  500px - 800px */
+
+@media (min-width: 501px) and (max-width: 800px) {
+
+    .navBar {
+        display: table;
+    }
+    
+    .navBtn {
+        float: right;
+    }
+    
+    .navList {
+        /* display: none; */
+        margin: 0;
+        padding: 0;
+        width: 50%;
+        position: fixed;
+        background-color: rgba(100, 100, 100, 0.9);        top: 0;
+        right: 0;
+        height: -webkit-fill-available;
+    }
+    
+    .closeBtn {
+        position: fixed;
+        height: 24px;
+        top: 12px;
+        right: 12px;
+    }
+
+    .navListItem {
+        padding: 24px 12px;
+    }
+
+    .navListItem:hover,
+    .navListItem:active{
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    
+    .navListItem a {
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    .sectionContainer {
+        max-width: 90%;
+        margin: auto;
+    }
+}
+
+
+/*    小於 500px   */
+
+@media (max-width: 500px) {
+
+    .navBar {
+        display: table;
+    }
+     
+    .navBtn {
+        float: right;
+    }
+    
+    .navList {
+        display: none;
+        margin: 0;
+        padding: 0;
+        width: 50%;
+        position: fixed;
+        background-color: rgba(100, 100, 100, 0.9);
+        top: 0;
+        right: 0;
+        z-index: 50;
+        height: -webkit-fill-available;
+    }
+    
+    .closeBtn {
+        position: fixed;
+        height: 24px;
+        top: 12px;
+        right: 12px;
+    }
+
+    .navListItem {
+        padding: 24px 12px;
+    }
+
+    .navListItem:hover,
+    .navListItem:active {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .flexRow {
+        flex-wrap: wrap;
+    }
+
+    .box {
+        margin: 5%;
+    }
+
+}
