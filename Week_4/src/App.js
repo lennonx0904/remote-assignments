@@ -5,7 +5,7 @@ import Section from './component/section/Section';
 
 
 
-class App extends React.Component {
+class App extends Component {
   render() {
     return (
       <div>
