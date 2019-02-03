@@ -56,7 +56,8 @@ class NavBtn extends React.Component {
     render() {
         return (
             <button type="button" className="navBtn" onClick={this.props.openList}>
-                <img src={require("https://lennonx0904.github.io/remote-assignments/Week_4_1/src/menu.svg")} />  
+                三
+                {/* <img src={require("../img/menu.svg")} alt="" />   */}  
             </button>
         );
     }
@@ -66,14 +67,16 @@ class NavList extends React.Component {
     render() {
         return ( 
                 <ul className="navList">
-                    <img src={require("https://lennonx0904.github.io/remote-assignments/Week_4_1/src/white_exit.svg")} 
-                        className="closeBtn" 
+                    {/* <img src={require("../img/white_exit.svg")} 
+                    alt="LOGO"/> */}
+                    <span className="closeBtn" 
                         onClick={this.props.closeList} 
-                        style={{display: window.innerWidth > 800 ? "none" : "block"}}
-                        />
-                        {this.props.navListItemName.map(item => 
-                        <li className="navListItem"><a href="#">{item}</a></li>   
-                        )}
+                        style={{color: 'white', display: window.innerWidth > 800 ? "none" : "block"}}>
+                        X
+                    </span>
+                    {this.props.navListItemName.map(item => 
+                    <li className="navListItem"><a href="#">{item}</a></li>   
+                    )}
                 </ul>
         );
     }
@@ -104,8 +107,11 @@ class Header extends React.Component {
           <nav className="navBar">
             <span className="name"> DEMO / </span>
             <img className="logo" />
-            {/* src={require("https://lennonx0904.github.io/remote-assignments/Week_4_1/src/papre_plane.svg")} */}
-            <NavBtn openList={this.openList} />
+            <span className="name"> Logo </span>
+              {/* <img className="logo" 
+                    src={require("../img/papre_plane.svg")}
+                    alt="" /> */}
+              <NavBtn openList={this.openList} />
             {
                 this.state.showList || window.innerWidth > 800 ?
                 <NavList 

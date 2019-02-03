@@ -55,6 +55,10 @@ footer {
     text-decoration: none;
 }
 
+.closeBtn {
+    font-size: 24px;
+}
+
 /* Welcome Cover */
 .cover {
     height: 240px;
