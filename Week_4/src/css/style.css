@@ -26,7 +26,8 @@ footer {
 
 .logo {
     margin-right: auto;
-    height: 36px;
+    /* height: 36px; */
+    font-size: 32px;
 }
 
 .navBtn {

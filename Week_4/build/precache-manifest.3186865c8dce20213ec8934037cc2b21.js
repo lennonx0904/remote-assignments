@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/remote-assignments/static/js/runtime~main.ad48c0c5.js"
   },
   {
-    "revision": "a55b4866c8d131f361a9",
-    "url": "/remote-assignments/static/js/main.a55b4866.chunk.js"
+    "revision": "023c89b721ccbb217d96",
+    "url": "/remote-assignments/static/js/main.023c89b7.chunk.js"
   },
   {
     "revision": "f739feb7d61c48a46bed",
     "url": "/remote-assignments/static/js/1.f739feb7.chunk.js"
   },
   {
-    "revision": "a55b4866c8d131f361a9",
+    "revision": "023c89b721ccbb217d96",
     "url": "/remote-assignments/static/css/main.109d4b7b.chunk.css"
   },
   {
-    "revision": "521505a208b8493819e1d63e4b8eddcc",
+    "revision": "420683a25f942acae4ce7b5a254930ce",
     "url": "/remote-assignments/index.html"
   }
 ];

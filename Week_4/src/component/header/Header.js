@@ -26,7 +26,7 @@ class Header extends React.Component {
         <header>
           <nav className="navBar">
               <span className="name"> DEMO /</span>
-              <span className="name"> Logo </span>
+              <span className="logo"> Logo </span>
               {/* <img className="logo" 
                     src={require("../img/papre_plane.svg")}
                     alt="X" /> */}
