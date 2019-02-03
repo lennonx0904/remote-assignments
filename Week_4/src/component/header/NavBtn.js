@@ -4,7 +4,8 @@ class NavBtn extends React.Component {
     render() {
         return (
             <button type="button" className="navBtn" onClick={this.props.openList}>
-                <img src={require("..../img/menu.svg")} />  
+                三
+                {/* <img src={require("../img/menu.svg")} alt="三" />   */}
             </button>
         );
     }
