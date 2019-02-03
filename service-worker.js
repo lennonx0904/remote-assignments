@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/remote-assignments/Week_4/precache-manifest.b57d0a6654970d362f827ef2e386eb7f.js"
+  "/remote-assignments/precache-manifest.3186865c8dce20213ec8934037cc2b21.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/remote-assignments/Week_4/index.html", {
+workbox.routing.registerNavigationRoute("/remote-assignments/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
