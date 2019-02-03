@@ -26,7 +26,7 @@ class Header extends React.Component {
         <header>
           <nav className="navBar">
               <span className="name"> DEMO / </span>
-              <img className="logo" src={require("./papre_plane.svg")} />
+              <img className="logo" src={require("..../img/papre_plane.svg")} />
               <NavBtn openList={this.openList} />
               {
                   this.state.showList || window.innerWidth > 800 ?

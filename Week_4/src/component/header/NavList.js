@@ -4,7 +4,7 @@ class NavList extends React.Component {
     render() {
         return ( 
                 <ul className="navList">
-                    <img src={require("./white_exit.svg")} 
+                    <img src={require("..../img/white_exit.svg")} 
                         className="closeBtn" 
                         onClick={this.props.closeList} 
                         style={{display: window.innerWidth > 800 ? "none" : "block"}}

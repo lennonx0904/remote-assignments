@@ -60,7 +60,7 @@ footer {
     height: 240px;
     width: 100%;
     background-color: slategrey;
-    background-image: url(./tech_cover.jpg);
+    background-image: url(../img/tech_cover.jpg);
     background-size: cover;
     display: table;
     padding-top: 36px;
