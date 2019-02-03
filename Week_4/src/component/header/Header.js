@@ -29,14 +29,14 @@ class Header extends React.Component {
               <span className="logo"> Logo </span>
               {/* <img className="logo" 
                     src={require("../img/papre_plane.svg")}
-                    alt="X" /> */}
+                    alt="" /> */}
               <NavBtn openList={this.openList} />
               {
-                  this.state.showList || window.innerWidth > 800 ?
-                  <NavList 
-                    navListItemName={navListItems} 
-                    closeList={this.closeList} />
-                  : null
+                this.state.showList || window.innerWidth > 800 ?
+                <NavList 
+                navListItemName={navListItems} 
+                closeList={this.closeList} />
+                : null
               }
           </nav>
         </header>
