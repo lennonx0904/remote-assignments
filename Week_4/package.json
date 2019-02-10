@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "http://lennonx0904.github.io/remote-assignments",
+  "homepage": "http://lennonx0904.github.io/remote-assignments",
   "dependencies": {
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
@@ -13,8 +13,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "npm run build&&gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -27,6 +26,7 @@
   ],
   "devDependencies": {
     "file-loader": "^3.0.1",
+    "gh-pages": "^2.0.1",
     "url-loader": "^1.1.2"
   }
 }
